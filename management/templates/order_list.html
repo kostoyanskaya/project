@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <title>Создание заказа</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/list_style.css' %}">
+</head>
+<body>
+<header>
+    <nav>
+        <button class="nav-button" onclick="location.href='/'">Главная</button>
+        <button class="nav-button" onclick="location.href='/total-list/'">Список заказов</button>
+        <button class="nav-button" onclick="location.href='/total-revenue/'">Отчеты</button>
+    </nav>
+</header>
+<div class="container mt-5">
+    <div class="form-card">
+        <h1 class="text-center">Создание заказа</h1>
+        <div id="error-message" class="error-message"></div>
+        <form id="order-form" method="post">{% csrf_token %}
+            <div class="form-group">
+                <label for="table-number">Номер стола:</label>
+                <input type="number" id="table-number" class="form-control" required>
+            </div>
+            <div id="items-container">
+                <div class="item-row mb-3">
+                    <input type="text" placeholder="Блюдо" class="item-input form-control" required>
+                    <input type="number" step="any" min="0" placeholder="Цена" class="item-input form-control" required>
+                    <button type="button" class="btn btn-danger remove-item-btn">X</button>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary add-item-btn">Добавить блюдо</button>
+            <br><br>
+            <button type="submit" class="btn btn-success">Создать заказ</button>
+        </form>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="{% static 'js/order.js' %}"></script>
+</body> 
+</html>

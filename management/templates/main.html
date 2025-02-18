@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>Система управления заказами</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">Система управления заказами</h1>
+        <div class="button-container">
+            <a href="{% url 'order_list' %}" class="circle-button">Добавить заказ</a>
+            <a href="{% url 'total_revenue' %}" class="circle-button">Отчеты</a>
+            <a href="{% url 'list' %}" class="circle-button">Список заказов</a>
+        </div>
+    </div>
+</body>
+</html>

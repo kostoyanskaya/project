@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <title>Управление Заказами</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/list_style.css' %}"> <!-- Подключаем наш файл стилей -->
+</head>
+<body>
+  <header>
+    <nav>
+      <button class="nav-button" onclick="location.href='/'">Главная</button>
+      <button class="nav-button" onclick="location.href='/custom/'">Добавить заказ</button>
+      <button class="nav-button" onclick="location.href='/total-revenue/'">Отчеты</button>
+    </nav>
+  </header>
+  <main>
+    <section id="search-section">
+      <input type="text" id="search-input" placeholder="Поиск по номеру стола или статусу">
+      <button id="search-button">Поиск</button>
+    </section>
+
+    <section id="orders-section">
+      <h1>Список заказов</h1>
+      <div id="orders-container">
+      </div>
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="{% static 'js/list_script.js' %}"></script>
+</body>
+</html>
