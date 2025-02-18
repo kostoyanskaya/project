@@ -1,0 +1,46 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 9cm);
+}
+
+.container {
+    text-align: center;
+}
+
+.main-title {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.circle-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.2em;
+    box-shadow: 0 9px 45px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.circle-button:hover {
+    background-color: #3e8e41;
+    transform: translateY(-3px);
+}

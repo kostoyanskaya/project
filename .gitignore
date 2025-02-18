@@ -1,4 +1,3 @@
-
 __pycache__/
 *.py[cod]
 *$py.class
@@ -68,8 +67,7 @@ instance/
 # Sphinx documentation
 docs/_build/
 
-# PyBuilder
-target/
+
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -136,11 +134,3 @@ dmypy.json
 .mypy_cache
 
 
-
-sent_emails/
-
-static/
-
-db.json/
-
-indented_db.json/
