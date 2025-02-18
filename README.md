@@ -90,7 +90,7 @@ python manage.py runserver
 ## Пример запроса и ответа
 
 ### POST запрос
-`/api/api/orders/`
+`/api/orders/`
 
 body:
 ```
