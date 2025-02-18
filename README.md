@@ -28,7 +28,7 @@ CafeManagement — это система управления заказами �
 1. Клонирование репозитория
 
 ```
-git@github.com:kostoyanskaya/task.git
+git clone git@github.com:kostoyanskaya/project.git
 ```
 
 1. Переход в директорию solutions
