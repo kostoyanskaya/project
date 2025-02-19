@@ -30,6 +30,11 @@ CafeManagement — это система управления заказами �
 ```
 git clone git@github.com:kostoyanskaya/project.git
 ```
+или
+```
+git clone git clone https://github.com/kostoyanskaya/project.git
+```
+
 
 1. Переход в директорию project
 

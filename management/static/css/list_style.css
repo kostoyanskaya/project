@@ -43,14 +43,17 @@ nav {
 
 
 .form-card {
+    max-width: 800px; /* Ограничиваем максимальную ширину блока */
+    margin: auto;
     background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 30px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 .item-input {
-    width: 45%;
+    width: 40%;
     display: inline-block;
+    margin-left: 2.35cm; /* Отступ слева на 1 см */
 }
 
 .form-group {
@@ -63,6 +66,46 @@ nav {
     margin-bottom: 1rem;
 }
 
+
+/* Цвет кнопки "Добавить блюдо" меняется на серый */
+.add-item-btn {
+    background-color: #888; /* Серый цвет */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Небольшая тень для объема */
+}
+
+/* Ховер эффект для кнопки */
+.add-item-btn:hover {
+    background-color: #666; /* Немного темнеет при наведении */
+}
+
+/* Перекрашиваем крестик удаления строки */
+.remove-item-btn {
+    background-color: #ff5555 !important; /* Более блеклый красный */
+    color: white;
+    border: none;
+    border-radius: 100%; /* Круглая кнопка */
+    padding: 6px 10px; /* Немного уменьшаем размер */
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.item-input {
+    width: 40%;
+    display: inline-block;
+    border-radius: 5px; /* Закругление углов для всех полей */
+}
+
+/* При наведении делаем кнопку крестика немного темнее */
+.remove-item-btn:hover {
+    background-color: #b64848 !important; /* Темнеем при наведении */
+}
 
 @media (max-width: 600px) {
     .nav-button {
@@ -163,3 +206,5 @@ main {
         font-size: 14px;
     }
 }
+
+

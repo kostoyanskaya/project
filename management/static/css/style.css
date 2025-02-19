@@ -178,9 +178,10 @@ main {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
+
 .container {
     max-width: 600px;
-    margin: auto;
+    margin: 4cm auto 0; /* Добавляем отступ сверху в 4 см */
     background: white;
     padding: 30px;
     border-radius: 5px;
@@ -236,3 +237,5 @@ h1 {
 .btn:hover {
     background-color: #218838;
 }
+
+
