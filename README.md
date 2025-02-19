@@ -28,13 +28,13 @@ CafeManagement — это система управления заказами �
 1. Клонирование репозитория
 
 ```
-git@github.com:kostoyanskaya/task.git
+git clone git@github.com:kostoyanskaya/project.git
 ```
 
-1. Переход в директорию solutions
+1. Переход в директорию project
 
 ```
-cd solutions
+cd project
 ```
 
 3. Создание виртуального окружения
@@ -90,7 +90,7 @@ python manage.py runserver
 ## Пример запроса и ответа
 
 ### POST запрос
-`/api/api/orders/`
+`/api/orders/`
 
 body:
 ```
