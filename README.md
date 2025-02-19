@@ -32,7 +32,7 @@ git clone git@github.com:kostoyanskaya/project.git
 ```
 или
 ```
-git clone git clone https://github.com/kostoyanskaya/project.git
+git clone https://github.com/kostoyanskaya/project.git
 ```
 
 
